@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Dane JSON</title>
+</head>
+
+<body>
+
+<div id="content">
+
+    <p>Nazwa: <span id="p_name"></span></p>
+    <p>Cena: <span id="p_price"></span></p>
+    <p>Kategoria: <span id="p_category"></span></p>
+
+</div>
+
+<script>
+
+// "klucz" : "wartość"
+
+var data = {
+  "name" : "Kurs Java Scripts",
+  "price" : 50,
+  "category" : "internet"
+
+};
+
+document.getElementById("p_name").innerHTML = data.name;
+document.getElementById("p_price").innerHTML = data.price;
+document.getElementById("p_category").innerHTML = data.category;
+
+
+</script>
+
+</body>
+</html>

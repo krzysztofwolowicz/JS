@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Dane JSON</title>
+</head>
+
+<body>
+
+<div id="content">
+
+</div>
+
+<script>
+
+var data = {"products" : [
+
+		{
+			"name" : "nazwa",
+			"price" : 40,
+			"category" : "Internet"
+
+
+		},
+		{
+			"name" : "nazwa2",
+			"price" : 50,
+			"category" : "Programowanie"
+		}
+
+	]};
+
+var output = "<ul>";
+	for(var i in data.products)
+
+	{
+		output += "<li>" + data.products[i].name + "</li>";
+		output += "<li>" + data.products[i].price + "</li>";
+		output += "<li>" + data.products[i].category + "</li>";
+	}
+
+	output += "</ul>";
+
+
+	document.getElementById('content').innerHTML = output;
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

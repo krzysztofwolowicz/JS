@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8" />
+	<title>Dane JSON</title>
+</head>
+
+<body>
+
+<div id="content">
+
+    <p>Nazwa: <span id="p_name"></span></p>
+    <p>Cena: <span id="p_price"></span></p>
+    <p>Kategoria: <span id="p_category"></span></p>
+
+    <p>Nazwa: <span id="p_name1"></span></p>
+    <p>Cena: <span id="p_price1"></span></p>
+    <p>Kategoria: <span id="p_category1"></span></p>
+
+</div>
+
+<script>
+
+var data = {"products" : [
+{
+	"name" : "Kurst PHP",
+	"price" : 60,
+	"category" : "Internet"
+
+},
+// każda kolejna klamra ma swoje id. Czyli index tabeli
+{
+	"name" : "Kurst mysql",
+	"price" : 55,
+	"category" : "Programowanie",
+
+}
+
+]};
+
+
+document.getElementById("p_name").innerHTML = data.products[0].name;
+document.getElementById("p_price").innerHTML = data.products[0].price;
+document.getElementById("p_category").innerHTML = data.products[0].category;
+
+
+
+
+var test = {"tablica" : [
+	{
+		"zmienna1" : "wartość1",
+		"zmienna2" : "wartość2",
+		"zmienna3" : "wartość3"
+	},
+	{
+		"zmienna1" : "wartość1.1",
+		"zmienna2" : "wartość2.2",
+		"zmienna3" : "wartość3.3",
+
+	},
+
+	]};
+
+	document.getElementById("p_name1").innerHTML = test.tablica[0].zmienna1;
+	document.getElementById("p_price1").innerHTML = test.tablica[0].zmienna2;
+	document.getElementById("p_category1").innerHTML = test.tablica[0].zmienna3;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
